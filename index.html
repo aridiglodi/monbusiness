@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="MonBusiness — la plateforme pour vendre, gérer vos clients et encaisser vos paiements.">
+<meta name="theme-color" content="#0e1230">
+<title>MonBusiness — Grandir ensemble</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Icônes (sprite) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="lg" x1="0" y1="0" x2="1" y2="0.45">
+      <stop offset="0" stop-color="#ffb02e"/><stop offset=".5" stop-color="#ff7a45"/><stop offset="1" stop-color="#7a5cff"/>
+    </linearGradient>
+  </defs>
+  <symbol id="logo" viewBox="0 0 48 40"><path d="M4 36 12 6 24 24 36 6 44 36 36 36 33 24 24 38 15 24 12 36z" fill="url(#lg)"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></symbol>
+  <symbol id="i-megaphone" viewBox="0 0 24 24"><path d="M3 11v3a1 1 0 0 0 1 1h2l5 4V6L6 10H4a1 1 0 0 0-1 1z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M8 17v-6M13 17V7M18 17v-3"/></symbol>
+  <symbol id="i-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h0a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h0a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v0a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+  <symbol id="i-up-right" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+  <symbol id="i-crown" viewBox="0 0 24 24"><path d="m2 8 5 5 5-8 5 8 5-5-2 11H4z"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M20 12V8H6a2 2 0 0 1 0-4h12v4"/><path d="M4 6v12a2 2 0 0 0 2 2h14v-4"/><path d="M18 12a2 2 0 0 0 0 4h4v-4z"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+  <symbol id="i-logout" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></symbol>
+  <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 5 5L20 7"/></symbol>
+  <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-edit" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></symbol>
+  <symbol id="i-dots" viewBox="0 0 24 24"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20 6 4"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7z"/><path d="M18 13 16.5 5.5 2 2l3.5 14.5L13 18z"/><path d="m2 2 7.6 7.6"/><circle cx="11" cy="11" r="2"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h8"/></symbol>
+  <symbol id="i-music" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2m3 0v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M10 11v6M14 11v6"/></symbol>
+  <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+  <symbol id="i-youtube" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><path d="m9.75 15.02 5.75-3.27-5.75-3.27z"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+</svg>
+
+<div class="app">
+  <!-- Barre latérale -->
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <svg class="logo"><use href="#logo"/></svg>
+      <div><b>MonBusiness</b><small>Grandir ensemble</small></div>
+    </div>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#/dashboard" data-nav="dashboard"><svg class="ico"><use href="#i-home"/></svg>Tableau de bord</a>
+      <a href="#/produits" data-nav="produits"><svg class="ico"><use href="#i-box"/></svg>Produits / Services</a>
+      <a href="#/commandes" data-nav="commandes"><svg class="ico"><use href="#i-bag"/></svg>Commandes</a>
+      <a href="#/clients" data-nav="clients"><svg class="ico"><use href="#i-users"/></svg>Clients</a>
+      <a href="#/paiements" data-nav="paiements"><svg class="ico"><use href="#i-card"/></svg>Paiements</a>
+      <a href="#/marketing" data-nav="marketing"><svg class="ico"><use href="#i-megaphone"/></svg>Marketing</a>
+      <a href="#/rapports" data-nav="rapports"><svg class="ico"><use href="#i-chart"/></svg>Rapports</a>
+      <a href="#/profil" data-nav="profil"><svg class="ico"><use href="#i-settings"/></svg>Paramètres</a>
+    </nav>
+    <div class="pro">
+      <div class="t"><svg class="ico"><use href="#i-crown"/></svg>Passer à la version Pro</div>
+      <p>Plus de fonctionnalités, plus de croissance.</p>
+      <button class="btn btn-amber" data-act="offers">Voir les offres</button>
+    </div>
+  </aside>
+  <div class="scrim" data-act="menu-close"></div>
+
+  <div class="main">
+    <header class="topbar">
+      <div class="top-brand">
+        <svg class="logo"><use href="#logo"/></svg>
+        <div><b>MonBusiness</b><small>Grandir ensemble</small></div>
+      </div>
+      <div class="search">
+        <svg class="ico"><use href="#i-search"/></svg>
+        <input id="q" type="search" placeholder="Rechercher un produit, une commande, un client…" autocomplete="off" aria-label="Rechercher">
+      </div>
+      <div class="top-right">
+        <button class="bell" data-act="bell" aria-label="Notifications">
+          <svg class="ico"><use href="#i-bell"/></svg><span class="badge" id="badge">3</span>
+        </button>
+        <a class="user" id="user" href="#/profil" aria-label="Mon profil"></a>
+        <button class="menu-btn" data-act="menu" aria-label="Menu"><svg class="ico"><use href="#i-menu"/></svg></button>
+      </div>
+    </header>
+
+    <main class="content" id="view"></main>
+
+    <footer class="foot">
+      <div class="brand"><svg class="logo"><use href="#logo"/></svg><div><b>MonBusiness</b><small>Grandir ensemble</small></div></div>
+      <div class="sep"></div>
+      <div class="msg"><b>Votre succès est notre priorité</b><span>Une plateforme simple, sécurisée et puissante pour tous les entrepreneurs.</span></div>
+      <div class="social">
+        <a href="#" aria-label="Facebook"><svg class="ico"><use href="#i-facebook"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg class="ico"><use href="#i-instagram"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg class="ico"><use href="#i-youtube"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg class="ico"><use href="#i-linkedin"/></svg></a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Navigation mobile -->
+  <nav class="bnav" aria-label="Navigation mobile">
+    <a href="#/dashboard" data-nav="dashboard"><svg class="ico"><use href="#i-home"/></svg>Accueil</a>
+    <a href="#/commandes" data-nav="commandes"><svg class="ico"><use href="#i-file"/></svg>Commandes</a>
+    <a href="#/produits" data-nav="produits"><svg class="ico"><use href="#i-box"/></svg>Produits</a>
+    <button data-act="menu"><svg class="ico"><use href="#i-dots"/></svg>Plus</button>
+  </nav>
+</div>
+
+<div id="modal-root"></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<noscript><p style="padding:24px">Activez JavaScript pour utiliser MonBusiness.</p></noscript>
+
+<script src="script.js"></script>
+</body>
+</html>
